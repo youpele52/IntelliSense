@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "parcel serve src/index.html",
-    "build": "parcel build src/index.html --no-source-maps",
+    "build": "parcel build src/index.html && rm -rf srv/build/* && mv -f build/* srv/build/",
     "start": "nodemon srv/index.js"
   },
   "devDependencies": {
